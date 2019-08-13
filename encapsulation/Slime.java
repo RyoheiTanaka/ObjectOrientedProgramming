@@ -1,12 +1,13 @@
 package app.encapsulation;
 
-public class Player {
+public class Slime {
     // アクセス修飾子をprivateにすることで自クラス内のみアクセスできるようにする
     private String name;
-    private int hp = 100; // 外部から直接アクセスされて突然HPが0になるのを回避する
+    private int hp = 10; // 外部から直接アクセスされて突然HPが0になるのを回避する
     private int power = 10;
+    private int exp = 2;
 
-    public Player(String name) {
+    public Slime(String name) {
         this.name = name;
     }
 
@@ -38,7 +39,7 @@ public class Player {
      ***/
     private void die(){
         System.out.println(this.name + "はHPが0になりました");
-        System.out.println("GAME OVER...");
+        System.out.println("経験値が" + this.exp + "上がった");
         System.out.println("--------------");
     }
 }
