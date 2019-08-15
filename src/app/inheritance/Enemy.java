@@ -1,6 +1,6 @@
 package app.inheritance;
 
-abstract class Enemy {
+public class Enemy {
     protected String name;
     protected int hp;
     protected int power;
